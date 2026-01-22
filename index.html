@@ -3,33 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>環境教育ホームページ</title>
+    <title>環境教育プロジェクト | 地球の未来を考える</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f0f9f0; }
-        header { background-color: #2d5a27; color: white; padding: 2rem; text-align: center; border-radius: 10px; }
-        section { background: white; padding: 20px; margin-top: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2d5a27; border-bottom: 2px solid #2d5a27; }
-        .eco-tip { background: #e8f5e9; padding: 10px; border-left: 5px solid #4caf50; }
+        /* 見た目を整える設定 (CSS) */
+        body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #333; background-color: #f8fbf8; }
+        header { background: linear-gradient(135deg, #2d5a27, #4caf50); color: white; padding: 60px 20px; text-align: center; }
+        nav { background: #fff; padding: 10px; text-align: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { margin: 0 15px; text-decoration: none; color: #2d5a27; font-weight: bold; }
+        .container { max-width: 900px; margin: 20px auto; padding: 20px; }
+        section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h2 { color: #2d5a27; border-left: 5px solid #2d5a27; padding-left: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1max)); gap: 20px; }
+        .card { border: 1px solid #eee; padding: 15px; border-radius: 8px; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.8rem; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>環境教育プロジェクト</h1>
-        <p>地球の未来のために、今できること</p>
-    </header>
 
-    <section>
-        <h2>私たちのミッション</h2>
-        <p>このサイトでは、自然の大切さや、日々の生活でできるエコな工夫を発信しています。</p>
+<header>
+    <h1>環境教育プロジェクト</h1>
+    <p>〜知ることから始まる、地球にやさしい一歩〜</p>
+</header>
+
+<nav>
+    <a href="#about">活動目的</a>
+    <a href="#news">最新情報</a>
+    <a href="#tips">エコな知恵</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>活動目的</h2>
+        <p>私たちは、次世代に豊かな自然を残すために、環境問題を身近に感じ、行動するためのきっかけ作りを行っています。</p>
     </section>
 
-    <section>
-        <h2>今日からできるエコ活動</h2>
-        <div class="eco-tip">
-            <strong>1. マイバッグを持ち歩く</strong><br>
-            プラスチックごみを減らす第一歩です。
+    <section id="news">
+        <h2>最新情報</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>ビーチクリーン開催</h3>
+                <p>2026年3月15日に海岸清掃を行います。参加者募集中です！</p>
+            </div>
+            <div class="card">
+                <h3>家庭でできる節電術</h3>
+                <p>冬の電気代を抑えつつ、環境にも優しい暖房の使い方を公開しました。</p>
+            </div>
         </div>
-        <p>（ここに活動内容をどんどん追加していけます！）</p>
     </section>
+
+    <section id="tips">
+        <h2>今日からできるエコな知恵</h2>
+        <ul>
+            <li>プラスチック製品の代わりに竹製のものを使う</li>
+            <li>地産地消を心がけ、輸送によるCO2を減らす</li>
+            <li>使っていないコンセントを抜く</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    © 2026 環境教育プロジェクト
+</footer>
+
 </body>
 </html>
