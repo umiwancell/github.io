@@ -1,69 +1,153 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>環境教育プロジェクト | 地球の未来を考える</title>
-    <style>
-        /* 見た目を整える設定 (CSS) */
-        body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #333; background-color: #f8fbf8; }
-        header { background: linear-gradient(135deg, #2d5a27, #4caf50); color: white; padding: 60px 20px; text-align: center; }
-        nav { background: #fff; padding: 10px; text-align: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        nav a { margin: 0 15px; text-decoration: none; color: #2d5a27; font-weight: bold; }
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; }
-        section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h2 { color: #2d5a27; border-left: 5px solid #2d5a27; padding-left: 15px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1max)); gap: 20px; }
-        .card { border: 1px solid #eee; padding: 15px; border-radius: 8px; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        footer { text-align: center; padding: 20px; color: #666; font-size: 0.8rem; }
-    </style>
+  <meta charset="UTF-8">
+  <title>環境教育アイデア共有サイト（仮）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      background-color: #f7f6f2;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #e9efe6;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.1em;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 1rem auto 0;
+      font-size: 0.95rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      border-left: 6px solid #8fa98f;
+      padding-left: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background: #e9efe6;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+    }
+
+    a {
+      color: #4f6f52;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-    <h1>環境教育プロジェクト</h1>
-    <p>〜知ることから始まる、地球にやさしい一歩〜</p>
+  <h1>環境教育アイデア共有サイト</h1>
+  <p>
+    タイで活動する協力隊員・教育関係者・環境に関心のある人のための  
+    環境教育アイデアと知識を集めたオープンなまとめサイト
+  </p>
 </header>
 
-<nav>
-    <a href="#about">活動目的</a>
-    <a href="#news">最新情報</a>
-    <a href="#tips">エコな知恵</a>
-</nav>
+<main>
 
-<div class="container">
-    <section id="about">
-        <h2>活動目的</h2>
-        <p>私たちは、次世代に豊かな自然を残すために、環境問題を身近に感じ、行動するためのきっかけ作りを行っています。</p>
-    </section>
+  <!-- 知りたい -->
+  <section>
+    <h2>知りたい</h2>
+    <div class="card-list">
+      <div class="card">
+        <h3>環境教育ってなに？</h3>
+        <p>環境教育の目的、考え方、タイや日本での位置づけをわかりやすくまとめます。</p>
+      </div>
 
-    <section id="news">
-        <h2>最新情報</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>ビーチクリーン開催</h3>
-                <p>2026年3月15日に海岸清掃を行います。参加者募集中です！</p>
-            </div>
-            <div class="card">
-                <h3>家庭でできる節電術</h3>
-                <p>冬の電気代を抑えつつ、環境にも優しい暖房の使い方を公開しました。</p>
-            </div>
-        </div>
-    </section>
+      <div class="card">
+        <h3>テーマ別基礎知識</h3>
+        <p>ごみ・水・森林・気候変動など、授業やワークショップに使える基礎情報。</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="tips">
-        <h2>今日からできるエコな知恵</h2>
-        <ul>
-            <li>プラスチック製品の代わりに竹製のものを使う</li>
-            <li>地産地消を心がけ、輸送によるCO2を減らす</li>
-            <li>使っていないコンセントを抜く</li>
-        </ul>
-    </section>
-</div>
+  <!-- やってみたい -->
+  <section>
+    <h2>やってみたい</h2>
+    <div class="card-list">
+      <div class="card">
+        <h3>ワークショップアイデア</h3>
+        <p>紙・布・自然素材など身近なものでできる環境教育ワークショップ。</p>
+      </div>
+
+      <div class="card">
+        <h3>授業・展示の実例</h3>
+        <p>学校・イベント・科学館などで実際に行った活動事例。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 考えたい -->
+  <section>
+    <h2>考えたい</h2>
+    <div class="card-list">
+      <div class="card">
+        <h3>問いを立てる</h3>
+        <p>「なぜ守るのか？」「誰のための環境？」など、話し合いのきっかけ。</p>
+      </div>
+
+      <div class="card">
+        <h3>価値観と文化</h3>
+        <p>日本・タイそれぞれの自然観や生活文化から考える環境教育。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer>
-    © 2026 環境教育プロジェクト
+  © Environmental Education Project / GitHub Pages
 </footer>
 
 </body>
